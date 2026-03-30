@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: image-upscaler
+    runtime: node
+    plan: starter
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: WAVESPEED_API_KEY
+        sync: false
+      - key: WAVESPEED_UPSCALE_MODEL
+        value: wavespeed-ai/real-esrgan-4x-upscaler

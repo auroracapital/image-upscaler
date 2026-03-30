@@ -11,4 +11,4 @@ services:
       - key: WAVESPEED_API_KEY
         sync: false
       - key: WAVESPEED_UPSCALE_MODEL
-        value: wavespeed-ai/real-esrgan-4x-upscaler
+        value: wavespeed-ai/real-esrgan

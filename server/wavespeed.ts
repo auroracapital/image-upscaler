@@ -11,7 +11,7 @@ function apiKey(): string {
 }
 
 function model(): string {
-  return process.env.WAVESPEED_UPSCALE_MODEL || 'wavespeed-ai/real-esrgan-4x-upscaler';
+  return process.env.WAVESPEED_UPSCALE_MODEL || 'wavespeed-ai/real-esrgan';
 }
 
 async function uploadFile(filePath: string): Promise<string> {
